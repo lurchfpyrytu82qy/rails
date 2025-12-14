@@ -197,8 +197,6 @@ The resulting event includes automatically-attached metadata:
 
 Further details on object payloads and automatic key normalization can be found in the [Event Objects][] section of the API documentation.
 
-* **[Event Objects][]**
-
 ### Debug Events
 
 Debug events are emitted only when debug mode is enabled:
@@ -249,8 +247,6 @@ This prevents high-volume diagnostic telemetry from flooding production logs by 
 
 Further details on debug events can be found in the [Debug Events][] section of the API documentation.
 
-* **[Debug Events][]**
-
 Subscribers
 -----------
 
@@ -298,9 +294,6 @@ Real-world subscriber implementations often:
 * Apply additional filtering or transformation
 
 For more information on [Subscribers][] and [Filtered Subscriptions][], please see their respective sections within the Structured Events API documentation.
-
-* **[Subscribers][]**
-* **[Filtered Subscriptions][]**
 
 Tags
 ----
@@ -351,8 +344,6 @@ All three events receive the `gateway` tag, making it easy to filter payment eve
 Tags are stack-based, meaning that they automatically clear when the block exits. Tags can also nest: when you enter a nested `tagged` block, the new tags are merged with outer tags and applied to events inside the block.
 
 Further details on tags can be found in the [Tags][] section of the API documentation.
-
-* **[Tags][]**
 
 Context
 -------
@@ -479,8 +470,6 @@ Rails.event.notify("payment_processed",
 ```
 
 Further details on the context store can be found in the [Context Store][] section of the API documentation.
-
-* **[Context Store][]**
 
 Testing Structured Events
 -------------------------
